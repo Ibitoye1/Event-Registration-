@@ -1,0 +1,164 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #163a63;
+    color: white;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Welcome section */
+.hero {
+    background-color: #dcecff;
+    padding: 45px 6%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 550px;
+    margin: 0 auto 20px;
+}
+
+/* General sections */
+.section {
+    padding: 30px 6%;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+/* Event cards */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 2px 6px #00000010;
+}
+
+.event-card h3 {
+    color: #163a63;
+    margin-top: 0;
+}
+
+.event-date {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #1769d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 18px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: #104e9e;
+}
+
+/* Registration form */
+#registration-form {
+    max-width: 500px;
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #00000010;
+}
+
+#registration-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#registration-form input,
+#registration-form select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#registration-form button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#form-message {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #163a63;
+    color: white;
+    padding: 15px;
+}
+
+/* Mobile screens */
+@media (max-width: 700px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
