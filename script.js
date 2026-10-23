@@ -5,21 +5,21 @@ const events = [
     {
         id: 1,
         title: "Web Development Workshop",
-        date: "April 26, 2026",
+        date: "December 26, 2026",
         venue: "Online",
         description: "Learn HTML, CSS and JavaScript."
     },
     {
         id: 2,
         title: "Digital Marketing Seminar",
-        date: "May 10, 2026",
+        date: "December 10, 2026",
         venue: "City Conference Hall",
         description: "Discover digital marketing strategies."
     },
     {
         id: 3,
         title: "Tech Innovation Conference",
-        date: "May 24, 2026",
+        date: "December 24, 2026",
         venue: "Grand Hotel",
         description: "Explore new technologies and ideas."
     }
